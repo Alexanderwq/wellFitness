@@ -618,8 +618,22 @@ input {
   margin: 0 0 0 auto;
 }
 .header-menu__item {
-  display: flex;
   flex: 1 0 auto;
+  position: relative;
+  height: 24px;
+}
+.header-menu__count {
+  background: var(--color-red);
+  position: absolute;
+  top: -5px;
+  right: -50%;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .header__bottom {
   background: var(--color-dark-grey);
@@ -984,8 +998,8 @@ input {
 .idea-bannerBest__bg {
   position: absolute;
   top: 0;
-  right: 0;
-  height: 100%;
+  right: -1px;
+  
 }
 .idea-train {
   background: #DBDDE5;
